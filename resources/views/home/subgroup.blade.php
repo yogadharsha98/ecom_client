@@ -60,7 +60,7 @@
                             </div>
                             <div class="detail-box">
                                 <h5>
-                                    {{$subgroup->subgroup_title}}
+                                    {{$subgroup->sub_group_title}}
                                 </h5>
                             </div>
                         </div>
