@@ -37,6 +37,6 @@ Route::post('/add_product', [AdminController::class, 'add_product']);
 Route::get('/show_product', [AdminController::class, 'show_product']);
 
 
-Route::get('/category/{id}', [HomeController::class, 'view_group']);
+Route::get('/category/{id}', [HomeController::class, 'view_department']);
 
-Route::get('/category/subgroup/{id}', [HomeController::class, 'view_sub_group'])->name('subgroup');
+Route::get('/category/group/{id}', [HomeController::class, 'view_group'])->name('subgroup');

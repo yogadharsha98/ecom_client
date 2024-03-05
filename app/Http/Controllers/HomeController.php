@@ -28,7 +28,7 @@ class HomeController extends Controller
         }
     }
 
-    public function view_group($id)
+    public function view_department($id)
     {
         $department = Department::find($id);
         $groups = $department->groups;
@@ -37,7 +37,7 @@ class HomeController extends Controller
         return view('home.group', compact('department', 'groups'));
     }
 
-    public function view_sub_group($id)
+    public function view_group($id)
     {
         $group = Group::find($id);
         $subgroup = $group->subGroups;
