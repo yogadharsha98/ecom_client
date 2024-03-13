@@ -30,11 +30,12 @@ class HomeController extends Controller
 
     public function view_department($id)
     {
+        $departments = Department::all();
         $department = Department::find($id);
         $groups = $department->groups;
         // $subGroups = $groups->subGroups;
         // $products = $subGroups->products;
-        return view('home.group', compact('department', 'groups'));
+        return view('home.group', compact('departments', 'department', 'groups'));
     }
 
     public function view_group($id)
